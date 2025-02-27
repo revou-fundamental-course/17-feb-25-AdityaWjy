@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <svg
+          width="200"
+          height="100"
+          viewBox="0 0 200 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text
+            x="10"
+            y="60"
+            font-family="Latin Modern Roman, serif"
+            font-size="48"
+            fill="black"
+          >
+            moqups
+          </text>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#main-content">Home</a></li>
+        <li><a href="#package">Our Package</a></li>
+        <li><a href="#closing">Call Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your Trusted Travel Agent's</h1>
+        <p>Your happiness is our happiness</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content" id="main-content">
+      <div class="content-left">
+        <div class="slideshow-container">
+          <img class="slides active" src="./assets/1.png" alt="Image 1" />
+          <img class="slides" src="./assets/2.png" alt="Image 2" />
+          <img class="slides" src="./assets/3.png" alt="Image 3" />
+
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="testimonial">
+          <p class="text-testimonial">
+            "Liburan jadi menyenangkan bersama Travel Agentku."
+          </p>
+          <div class="profile">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Lingkaran latar belakang -->
+              <circle cx="50" cy="50" r="40" fill="#EDF0F5" />
+
+              <!-- Kepala pengguna -->
+              <circle cx="50" cy="40" r="10" fill="#A0AEC0" />
+
+              <!-- Badan pengguna -->
+              <path
+                d="M35 65c0-8 7-15 15-15s15 7 15 15v5H35v-5z"
+                fill="#A0AEC0"
+              />
+            </svg>
+            <div>
+              <p class="name">Florence Hughes</p>
+              <p class="job">Ibu Rumah Tangga, 28</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- information -->
+
+        <div class="information">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            libero quasi omnis provident sapiente maiores illum amet laborum
+            consequatur, non voluptates maxime! Quo debitis facere possimus
+            totam.
+          </h3>
+
+          <div class="benefits">
+            <div class="number">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Circle 1 -->
+                <circle cx="30" cy="30" r="25" fill="#EEF0F4" />
+                <text
+                  x="30"
+                  y="35"
+                  font-size="20"
+                  font-family="Arial"
+                  font-weight="bold"
+                  text-anchor="middle"
+                  fill="#A0A9B5"
+                >
+                  1
+                </text>
+              </svg>
+            </div>
+
+            <div class="feature">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                voluptates laudantium vero qui assumenda unde quibusdam eos
+                praesentium amet inventore.
+              </p>
+            </div>
+          </div>
+          <div class="benefits">
+            <div class="number">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Circle 1 -->
+                <circle cx="30" cy="30" r="25" fill="#EEF0F4" />
+                <text
+                  x="30"
+                  y="35"
+                  font-size="20"
+                  font-family="Arial"
+                  font-weight="bold"
+                  text-anchor="middle"
+                  fill="#A0A9B5"
+                >
+                  2
+                </text>
+              </svg>
+            </div>
+
+            <div class="feature">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                voluptates laudantium vero qui assumenda unde quibusdam eos
+                praesentium amet inventore.
+              </p>
+            </div>
+          </div>
+          <div class="benefits">
+            <div class="number">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Circle 1 -->
+                <circle cx="30" cy="30" r="25" fill="#EEF0F4" />
+                <text
+                  x="30"
+                  y="35"
+                  font-size="20"
+                  font-family="Arial"
+                  font-weight="bold"
+                  text-anchor="middle"
+                  fill="#A0A9B5"
+                >
+                  3
+                </text>
+              </svg>
+            </div>
+
+            <div class="feature">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                voluptates laudantium vero qui assumenda unde quibusdam eos
+                praesentium amet inventore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <h3>Contact Us</h3>
+        <p>Sales akan menghubungi Anda 1x24 jam setelah data kami terima.</p>
+        <form id="contactForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" />
+          <span id="nameError" class="error"></span>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" />
+          <span id="emailError" class="error"></span>
+
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="">Select an option</option>
+            <option value="travel">Travel</option>
+            <option value="tour">Tour</option>
+            <option value="honeymoon">Honeymoon</option>
+          </select>
+          <span id="interestError" class="error"></span>
+
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="package-title">
+      <h2>Our Package</h2>
+    </div>
+
+    <!-- Package Section -->
+    <section class="package" id="package">
+      <div class="package-list">
+        <div class="package-item">
+          <!-- item -->
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" fill="#EEF0F4" />
+                <path
+                  d="M28 16C23.58 16 20 19.58 20 24C20 26.99 21.64 29.71 24.2 31.11V34C24.2 34.55 24.65 35 25.2 35H30.8C31.35 35 31.8 34.55 31.8 34V31.11C34.36 29.71 36 26.99 36 24C36 19.58 32.42 16 28 16ZM30 33H26V32H30V33ZM30 31H26V29H30V31ZM28 27C26.9 27 26 26.1 26 25C26 23.9 26.9 23 28 23C29.1 23 30 23.9 30 25C30 26.1 29.1 27 28 27Z"
+                  fill="#A0A9B5"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <div class="title">Bali</div>
+              <div class="description">
+                Travel dan wisata di Bali. <br />
+                Kunjungi cagar budaya dan kuliner yang menarik.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" fill="#EEF0F4" />
+                <path
+                  d="M28 16C23.58 16 20 19.58 20 24C20 26.99 21.64 29.71 24.2 31.11V34C24.2 34.55 24.65 35 25.2 35H30.8C31.35 35 31.8 34.55 31.8 34V31.11C34.36 29.71 36 26.99 36 24C36 19.58 32.42 16 28 16ZM30 33H26V32H30V33ZM30 31H26V29H30V31ZM28 27C26.9 27 26 26.1 26 25C26 23.9 26.9 23 28 23C29.1 23 30 23.9 30 25C30 26.1 29.1 27 28 27Z"
+                  fill="#A0A9B5"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <div class="title">Bali</div>
+              <div class="description">
+                Travel dan wisata di Bali. <br />
+                Kunjungi cagar budaya dan kuliner yang menarik.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" fill="#EEF0F4" />
+                <path
+                  d="M28 16C23.58 16 20 19.58 20 24C20 26.99 21.64 29.71 24.2 31.11V34C24.2 34.55 24.65 35 25.2 35H30.8C31.35 35 31.8 34.55 31.8 34V31.11C34.36 29.71 36 26.99 36 24C36 19.58 32.42 16 28 16ZM30 33H26V32H30V33ZM30 31H26V29H30V31ZM28 27C26.9 27 26 26.1 26 25C26 23.9 26.9 23 28 23C29.1 23 30 23.9 30 25C30 26.1 29.1 27 28 27Z"
+                  fill="#A0A9B5"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <div class="title">Bali</div>
+              <div class="description">
+                Travel dan wisata di Bali. <br />
+                Kunjungi cagar budaya dan kuliner yang menarik.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" fill="#EEF0F4" />
+                <path
+                  d="M28 16C23.58 16 20 19.58 20 24C20 26.99 21.64 29.71 24.2 31.11V34C24.2 34.55 24.65 35 25.2 35H30.8C31.35 35 31.8 34.55 31.8 34V31.11C34.36 29.71 36 26.99 36 24C36 19.58 32.42 16 28 16ZM30 33H26V32H30V33ZM30 31H26V29H30V31ZM28 27C26.9 27 26 26.1 26 25C26 23.9 26.9 23 28 23C29.1 23 30 23.9 30 25C30 26.1 29.1 27 28 27Z"
+                  fill="#A0A9B5"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <div class="title">Bali</div>
+              <div class="description">
+                Travel dan wisata di Bali. <br />
+                Kunjungi cagar budaya dan kuliner yang menarik.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" fill="#EEF0F4" />
+                <path
+                  d="M28 16C23.58 16 20 19.58 20 24C20 26.99 21.64 29.71 24.2 31.11V34C24.2 34.55 24.65 35 25.2 35H30.8C31.35 35 31.8 34.55 31.8 34V31.11C34.36 29.71 36 26.99 36 24C36 19.58 32.42 16 28 16ZM30 33H26V32H30V33ZM30 31H26V29H30V31ZM28 27C26.9 27 26 26.1 26 25C26 23.9 26.9 23 28 23C29.1 23 30 23.9 30 25C30 26.1 29.1 27 28 27Z"
+                  fill="#A0A9B5"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <div class="title">Bali</div>
+              <div class="description">
+                Travel dan wisata di Bali. <br />
+                Kunjungi cagar budaya dan kuliner yang menarik.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" fill="#EEF0F4" />
+                <path
+                  d="M28 16C23.58 16 20 19.58 20 24C20 26.99 21.64 29.71 24.2 31.11V34C24.2 34.55 24.65 35 25.2 35H30.8C31.35 35 31.8 34.55 31.8 34V31.11C34.36 29.71 36 26.99 36 24C36 19.58 32.42 16 28 16ZM30 33H26V32H30V33ZM30 31H26V29H30V31ZM28 27C26.9 27 26 26.1 26 25C26 23.9 26.9 23 28 23C29.1 23 30 23.9 30 25C30 26.1 29.1 27 28 27Z"
+                  fill="#A0A9B5"
+                />
+              </svg>
+            </div>
+            <div class="content">
+              <div class="title">Bali</div>
+              <div class="description">
+                Travel dan wisata di Bali. <br />
+                Kunjungi cagar budaya dan kuliner yang menarik.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing container" id="closing">
+      <h1>Your Closing Argument Headline</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+        explicabo, deserunt error ad quam mollitia sed delectus, rem
+        necessitatibus molestiae dolorum, doloribus natus neque aspernatur
+        doloremque tempora suscipit nihil eos!
+      </p>
+
+      <button>CALL TO ACTION</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Travel Agent. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
